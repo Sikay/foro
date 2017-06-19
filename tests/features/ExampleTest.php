@@ -1,7 +1,5 @@
 <?php
 
-
-
 class ExampleTest extends FeatureTestCase
 {
     /**

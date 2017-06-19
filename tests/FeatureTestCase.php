@@ -9,7 +9,7 @@ class FeatureTestCase extends TestCase
     public function seeErrors(array $fields)
     {
         foreach ($fields as $name => $errors) {
-            foreach ((array) as $errors => $message) {
+            foreach ((array) $errors as $message) {
                 $this->seeInElement(
                     "#field_{$name}.has-error .help-block", 
                     $message
